@@ -129,6 +129,7 @@ section {
   display: block;
   font-size: 64px;
   margin-bottom: var(--space-md);
+  cursor: pointer;
 }
 
 .category-name {
