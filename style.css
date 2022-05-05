@@ -28,6 +28,8 @@
   --light-gray: #f3f3f3;
 
   --primary-gradient: -webkit-linear-gradient(-70deg, #9867f0 0%, #ed4e50 100%);
+
+  color-scheme: dark;
 }
 
 body,
@@ -36,6 +38,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: var(--font-sans), sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -49,7 +52,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: var(--space-md);
-  box-sizing: border-box;
+  box-sizing: border-box;;
 }
 
 .main-section-logo {
