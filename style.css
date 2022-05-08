@@ -19,7 +19,7 @@
   --space-md: 16px;
   --space-xsm: 4px;
   --space-sm: 8px;
-  --space-lg: 32px;
+  --space-lg: 254px;
   --space-xl: 64px;
 
   /* Colors */
@@ -52,7 +52,8 @@ section {
   justify-content: center;
   align-items: center;
   padding: var(--space-md);
-  box-sizing: border-box;;
+  box-sizing: border-box;
+  ;
 }
 
 .main-section-logo {
@@ -85,6 +86,9 @@ section {
   display: flex;
   gap: var(--space-md);
   margin-top: var(--space-md);
+  position: absolute;
+  left: 46%;
+  top: 172%;
 }
 
 .main-section-actions a {
@@ -114,6 +118,8 @@ section {
   font-family: var(--font-manrope);
   font-weight: var(--font-bold);
   font-size: var(--text-xl);
+  margin: 82px;
+  position: absolute;
 }
 
 .event-category-list {
@@ -236,4 +242,97 @@ footer {
   .main-section-title.footer-title {
     margin-bottom: var(--space-md);
   }
+}
+
+
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  *margin-left: -100px;
+  /* border: 1px solid white; */
+  /* border-collapse: collapse; */
+  /*ie7*/
+}
+
+td,
+th {
+  vertical-align: top;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+th {
+  /*  position:absolute;
+  *position: relative; /*ie7*/
+  /*  left:0; */
+  width: 180px;
+}
+
+.hard_left {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  width: 110px;
+  text-align: center;
+  /* height: 500px; */
+}
+
+/* .next_left {
+  position: absolute;
+  *position: relative;
+  left: 100px;
+  width: 100px;
+} */
+
+.outer {
+  position: absolute;
+  left: 15%;
+  top: 203%;
+}
+
+.inner {
+  /* overflow-x: scroll; */
+  overflow-y: visible;
+  width: 0%;
+  margin-left: 128px;
+}
+
+
+
+.dj_text {
+  position: absolute;
+  top: 261%;
+  font-size: 36px;
+  left: 29%;
+}
+
+.djeve {
+  /* font-size: 5em; */
+  font-family: serif;
+  color: transparent;
+  text-align: center;
+  animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    background: linear-gradient(#3f9487, #919127);
+    -webkit-background-clip: text;
+  }
+
+  100% {
+    background: linear-gradient(#e90707, #1054d2);
+    -webkit-background-clip: text;
+  }
+
+  /* 100% {
+      background: linear-gradient(
+              #3c00ff, #4d17b9);
+      -webkit-background-clip: text;
+  } */
 }
